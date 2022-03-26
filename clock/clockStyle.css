@@ -7,6 +7,12 @@ body
 	font-size:40px;
 }
 
+h1
+{
+	margin: 0;
+	padding-bottom: 30px;
+}
+
 #container
 {
 	position:absolute;
@@ -30,7 +36,10 @@ body
 
 #clock
 {
+	display: flex;
 	letter-spacing:7px;
+	justify-content: center;
+	padding: 10px;
 }
 
 button

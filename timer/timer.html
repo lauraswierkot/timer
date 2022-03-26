@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="vieport" content="width=device-width, initial-scale=1.0">
 	<title>timer</title>
 	<link rel="stylesheet" href="timerStyle.css" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,12 +15,16 @@
 <body>
 	<div id="container">
 		<h1>timer</h1>
-		<p><input type="number" id="minutes" value=0> 
-		: 
-		<input type="number" id="seconds" value=0></p>
+	<div id="timeContainer">
+	<p><input type="number" id="minutes" value=0> 
+	:
+	<input type="number" id="seconds" value=0></p>
+	</div>
+	<div id="buttonContainer">
 		<button id="start">start</button>
 		<button id="stop">stop</button>
 		<button id="reset">reset</button>
+	</div>
 	</div>
 	<a href="../index.html">
 		<button <i class="material-icons">home</i></button></a>

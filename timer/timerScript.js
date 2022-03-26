@@ -12,12 +12,14 @@ function startCountdown()
 	var minutesValue = minutesInput.value;
 	var secondsValue = secondsInput.value;
 	
-	if(secondsValue != 0){
-	secondsValue--;}
+	if(secondsValue != 0)
+	{
+	secondsValue--;
+	}
 	
 	if(secondsValue == 0 && minutesValue > 0)
 	{
-		secondsValue = 60;
+		secondsValue = 59;
 		minutesValue--;
 	}
 	else if(minutesValue == 0 && secondsValue == 0)
@@ -32,7 +34,22 @@ function startCountdown()
 	{
 		minutesValue = 0;
 	}
-	
+	if(secondsValue > 60 || minutesValue > 60 )
+	{
+		alert("Value has to be smaller than 60");
+		document.getElementById('start').disabled = true;
+		minutesValue = 0;
+		secondsValue = 0;
+		document.getElementById('start').disabled = false;
+	}
+	if(minutesValue < 0 || secondsValue < 0)
+	{
+		alert("Value has to be bigger than 0");
+		document.getElementById('start').disabled = true;
+		minutesValue = 0;
+		secondsValue = 0;
+		document.getElementById('start').disabled = false;
+	}
 	minutesInput.value = minutesValue;
 	secondsInput.value = secondsValue;
 }

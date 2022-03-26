@@ -7,6 +7,11 @@ body
 	font-size:40px;
 }
 
+h1
+{
+margin:0;
+}
+
 #container
 {
 	position:absolute;
@@ -21,6 +26,19 @@ body
     transform: translateX(-50%) translateY(-50%);
 	border: 2px solid transparent;
 	transition: 0.5s;
+}
+
+#timeContainer
+{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+#buttonContainer
+{
+	display: flex;
+	justify-content: center;
 }
 
 #container:hover
