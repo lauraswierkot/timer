@@ -12,7 +12,6 @@ var interval; //to store timer values
 function startTimer()
 { 
 	miliseconds++;
-
 	if (miliseconds < 9)
 	{
 		addmiliseconds.innerHTML = '0' + miliseconds;
@@ -32,7 +31,6 @@ function startTimer()
 	{
 		addSeconds.innerHTML = seconds;
 	}	
-	
 }
 
 start.onclick = function()
